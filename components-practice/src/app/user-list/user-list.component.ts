@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import User from 'src/User';
 
 @Component({
   selector: 'app-user-list',
@@ -11,5 +12,20 @@ export class UserListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  lamine: User = {
+    firstName: 'Lamine',
+    lastName: 'Mesroua',
+    age: 24,
+    sex: 'male'
+  }
+
+  users:  User[] = [   // enforce interface on this array
+    {
+      firstName: 'Lamine',
+      lastName: 'Mesroua',
+      age: 24,
+      sex: 'male'
+    }] 
 
 }
