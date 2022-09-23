@@ -10,7 +10,15 @@ export class UserListComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  // this is a diffrent type outside User and User[]
+  ngOnInit(): void {  // void means NOTHING
+  }
+
+
+  // type of parameter is inside the quotes
+  // return type is after parenthesis with our parameter
+  sayHello(name: string): string{
+    return "Hello, I am," + name;
   }
 
   lamine: User = {
@@ -26,6 +34,13 @@ export class UserListComponent implements OnInit {
       lastName: 'Mesroua',
       age: 24,
       sex: 'male'
-    }] 
+    },
+    {
+      firstName: 'Lily',
+      lastName: 'Bedjguelel',
+      age: 24,
+      sex: 'female'
+    }
+  ] 
 
 }

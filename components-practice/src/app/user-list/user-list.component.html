@@ -1,1 +1,5 @@
-<app-user></app-user>
+<!--let element of the array-->
+<ul *ngFor="let user of users">
+    <li>{{ user | json }}</li>
+
+</ul>
