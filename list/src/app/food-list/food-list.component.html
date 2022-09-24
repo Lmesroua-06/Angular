@@ -1,5 +1,5 @@
 <ul *ngFor="let food of foodList">
 
-    <li (click)="">{{ food.nameOfDish }}</li> // food here is following the let "food"
+    <li (click)="chooseFood(food)">{{ food.nameOfDish }}</li> // food here is following the let "food"
 
 </ul>

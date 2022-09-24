@@ -13,6 +13,12 @@ export class FoodListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  chosenFood?: Food ; // this is not a function 
+
+  chooseFood(food: Food){
+    this.chosenFood = food;
+    console.log(food);
+  }
 
   foodList: Food [] = [
 
