@@ -3,3 +3,10 @@
     <li (click)="chooseFood(food)">{{ food.nameOfDish }}</li> // food here is following the let "food"
 
 </ul>
+
+<div *ngIf="chosenFood">
+    <h2>Ingrediandte of chosen food: </h2>
+    <h3>{{ chosenFood.mainIngredient }}</h3>
+
+
+</div>

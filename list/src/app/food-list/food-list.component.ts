@@ -41,7 +41,7 @@ export class FoodListComponent implements OnInit {
 
     },
     {
-      nameOfDish: 'spaghetti meatballs',
+      nameOfDish: 'spaghetti & meatballs',
       rating: 5,
       mainIngredient: 'pasta',
       vegan: false,
