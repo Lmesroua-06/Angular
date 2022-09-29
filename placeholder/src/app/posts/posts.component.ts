@@ -10,11 +10,18 @@ import { Post } from '../types.ts/Post';
 export class PostsComponent implements OnInit {
 
   posts: Post[] = [];
+  chosenPost?: Post;
 
   constructor(private placeholderService: PlaceholderService) { }
 
   ngOnInit(): void {
     this.getPost()
+  }
+
+  choosePost(post: Post): void{
+    console.log(post);
+    this.chosenPost = post;
+
   }
 
   getPost(): void{
