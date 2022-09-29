@@ -10,7 +10,7 @@ import { Post } from './types.ts/Post';
 })
 export class PlaceholderService {
 
-  BASE_URL = 'https://jsonplaceholder.typicode.com';
+  BASE_URL = 'https://jsonplaceholder.typicode.com/';
 
 
   // the private: http is the dependency injection 
