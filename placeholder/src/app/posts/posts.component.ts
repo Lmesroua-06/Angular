@@ -24,6 +24,12 @@ export class PostsComponent implements OnInit {
 
   }
 
+  save(post: Post): void {
+    this.placeholderService.updatePost(post)
+      .subscribe(data => console.log(data));
+
+  }
+
   getPost(): void{
     this.placeholderService.getPosts() // this line return an observable
       .subscribe(data => { // we subscribe to an observable to see if it get info
@@ -32,7 +38,7 @@ export class PostsComponent implements OnInit {
       });
   }
 
-
+ 
 }
 
 
